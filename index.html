@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SerraSense — Support</title>
+<style>
+  :root {
+    --bg: #0f1512;
+    --card: #17201b;
+    --accent: #3ecf8e;
+    --text: #e6efe9;
+    --muted: #9db0a6;
+    --border: #24322a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 48px 0 32px;
+  }
+  .logo {
+    width: 72px; height: 72px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #2fa876, #3ecf8e);
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    font-size: 38px;
+    margin-bottom: 16px;
+  }
+  h1 { font-size: 30px; letter-spacing: -0.5px; }
+  .tagline { color: var(--muted); margin-top: 6px; font-size: 16px; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 18px;
+  }
+  h2 { font-size: 18px; margin-bottom: 12px; color: var(--accent); }
+  p, li { color: var(--text); font-size: 15px; }
+  ul { padding-left: 20px; margin-top: 6px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .contact-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #06130d;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  .faq-q { font-weight: 600; margin-top: 16px; }
+  .faq-q:first-of-type { margin-top: 0; }
+  .faq-a { color: var(--muted); margin-top: 4px; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 28px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🌱</div>
+    <h1>SerraSense</h1>
+    <div class="tagline">Greenhouse temperature &amp; humidity monitoring</div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>SerraSense is a free companion app that lets you monitor temperature and
+    humidity inside your greenhouse in real time. It connects over your local
+    network to your own ESP32-based sensor device and shows live readings,
+    analytics, VPD (vapor pressure deficit) and dew-point risk metrics.</p>
+  </section>
+
+  <section>
+    <h2>Contact &amp; Support</h2>
+    <p>Have a question, found a bug, or need help connecting your sensor?
+    We're happy to help — reach out anytime:</p>
+    <a class="contact-btn" href="mailto:inch70798@gmail.com">Email Support</a>
+    <p style="margin-top:14px; color:var(--muted); font-size:14px;">
+      We typically respond within 1–2 business days.
+    </p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-q">Is SerraSense free?</div>
+    <div class="faq-a">Yes. The app is completely free. There are no
+    subscriptions, no in-app purchases, and no paid content.</div>
+
+    <div class="faq-q">How do I connect my sensor?</div>
+    <div class="faq-a">In Settings, enter the local IP address of your ESP32
+    sensor device. Make sure your iPhone or iPad is on the same Wi-Fi network
+    as the sensor.</div>
+
+    <div class="faq-q">The app shows no data — what should I do?</div>
+    <div class="faq-a">Check that the sensor device is powered on and reachable
+    on your local network, and that the IP address in Settings is correct.
+    Grant the app permission to access the local network when prompted.</div>
+
+    <div class="faq-q">What do VPD and dew-point risk mean?</div>
+    <div class="faq-a">VPD (vapor pressure deficit) reflects how favorable the
+    air is for plant transpiration. Dew-point risk indicates when condensation
+    may form, which can encourage mold.</div>
+
+    <div class="faq-q">Do you collect my data?</div>
+    <div class="faq-a">No. Sensor readings stay on your device and are read
+    directly from your own hardware over the local network.</div>
+  </section>
+
+  <footer>
+    © 2026 SerraSense · Made for greenhouse hobbyists
+  </footer>
+</div>
+</body>
+</html>
